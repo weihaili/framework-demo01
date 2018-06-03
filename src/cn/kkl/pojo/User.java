@@ -5,6 +5,7 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
+
 @Entity
 public class User {
 	@Id
@@ -15,6 +16,16 @@ public class User {
 	
 	private String upassword;
 	
+	private char gender;
+	
+	public char getGender() {
+		return gender;
+	}
+
+	public void setGender(char gender) {
+		this.gender = gender;
+	}
+
 	public int getId() {
 		return Id;
 	}

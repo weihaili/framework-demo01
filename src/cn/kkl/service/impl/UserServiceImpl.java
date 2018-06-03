@@ -18,7 +18,7 @@ public class UserServiceImpl implements UserService {
 
 	@Override
 	public void add(String uname) {
-		System.out.println("*****UserServiceImpl.add()******");
+		System.out.println("*****UserServiceImpl.add()******"+uname);
 		User user = new User();
 		if(!uname.isEmpty()) {
 			user.setUname(uname);
@@ -26,6 +26,7 @@ public class UserServiceImpl implements UserService {
 			user.setUname("liweihai"+(int)Math.ceil(Math.random()*1000));
 		}
 		user.setUpassword("123456");
+		user.setGender('M');
 		userDao.add(user);
 	}
 

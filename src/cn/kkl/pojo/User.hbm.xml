@@ -14,5 +14,8 @@
         <property name="upassword" type="java.lang.String">
             <column name="UPASSWORD" />
         </property>
+        <property name="gender" type="java.lang.Character">
+        	<column name="GENDER"></column>
+        </property>
     </class>
 </hibernate-mapping>

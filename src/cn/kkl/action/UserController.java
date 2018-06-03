@@ -28,7 +28,7 @@ public class UserController implements Controller{
 	public ModelAndView handleRequest(HttpServletRequest req, HttpServletResponse resp) throws Exception {
 		System.out.println("****UserController.handleRequest()*****");
 		req.setAttribute("name", "liweihai");
-		String uname= (String)req.getAttribute("uname");
+		String uname=req.getParameter("uname");
 		userService.add(uname);
 		return new ModelAndView("index");
 	}
